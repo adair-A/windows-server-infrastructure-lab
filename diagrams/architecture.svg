@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Windows Server infrastructure lab architecture</title>
+  <desc id="desc">Server A provides domain, DNS, policy, NAT, file sharing and IIS. Server B provides DHCP. A Windows client consumes the services on the internal network. Server A connects the internal network to an external network.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#607080"/></marker>
+    <style>
+      .bg{fill:#f7f9fc}.box{fill:#fff;stroke:#1f4b7a;stroke-width:3}.client{stroke:#39755f}.external{fill:#eef3f8;stroke:#607080;stroke-width:2}.title{font:700 24px Segoe UI,Arial,sans-serif;fill:#15324d}.name{font:700 20px Segoe UI,Arial,sans-serif;fill:#15324d}.text{font:16px Segoe UI,Arial,sans-serif;fill:#33485c}.small{font:14px Segoe UI,Arial,sans-serif;fill:#506579}.line{stroke:#607080;stroke-width:3;fill:none;marker-end:url(#arrow)}.net{stroke:#2d6fa3;stroke-width:5}.label{font:700 15px Segoe UI,Arial,sans-serif;fill:#2d6fa3}
+    </style>
+  </defs>
+  <rect class="bg" width="1000" height="560" rx="18"/>
+  <text class="title" x="45" y="48">Windows Server Lab Topology</text>
+  <rect class="box" x="70" y="105" width="300" height="225" rx="14"/>
+  <text class="name" x="95" y="140">Server A</text>
+  <text class="text" x="95" y="172">AD DS · DNS · Group Policy</text>
+  <text class="text" x="95" y="198">RRAS/NAT · SMB share · IIS</text>
+  <text class="small" x="95" y="235">Internal: 192.168.1.10</text>
+  <text class="small" x="95" y="261">Domain: fl2026corp.com</text>
+  <text class="small" x="95" y="294">Dual network adapters</text>
+  <rect class="box" x="630" y="105" width="300" height="170" rx="14"/>
+  <text class="name" x="655" y="140">Server B</text>
+  <text class="text" x="655" y="174">DHCP · Domain member</text>
+  <text class="small" x="655" y="213">192.168.1.11</text>
+  <text class="small" x="655" y="239">DNS / gateway → Server A</text>
+  <rect class="box client" x="630" y="350" width="300" height="145" rx="14"/>
+  <text class="name" x="655" y="387">Windows Domain Client</text>
+  <text class="text" x="655" y="421">GPO · DHCP · DNS · SMB</text>
+  <text class="small" x="655" y="456">DHCP: 192.168.1.100/24</text>
+  <line class="net" x1="370" y1="300" x2="630" y2="300"/>
+  <text class="label" x="447" y="287">Internal network</text>
+  <line class="net" x1="500" y1="300" x2="745" y2="275"/>
+  <line class="net" x1="500" y1="300" x2="745" y2="350"/>
+  <rect class="external" x="85" y="405" width="260" height="90" rx="45"/>
+  <text class="name" x="143" y="444">External network</text>
+  <text class="small" x="144" y="470">via RRAS / NAT</text>
+  <path d="M215 405 L215 330" stroke="#607080" stroke-width="3" fill="none"/>
+</svg>

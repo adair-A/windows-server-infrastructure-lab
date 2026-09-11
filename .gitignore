@@ -1,0 +1,18 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.tmp
+*.bak
+
+# Keep source recordings, transcripts, and private connection material out.
+*.mp4
+*.srt
+*.key
+*.pem
+*.p12
+*.pfx
+*.ovpn
+.env
+.env.*
