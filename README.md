@@ -2,7 +2,7 @@
 
 I built a Windows domain with two servers and one workstation. Server A ran AD DS, DNS, Group Policy, RRAS/NAT, a shared folder, and IIS. Server B handled DHCP. I used the workstation to check domain logons, user restrictions, addressing, name resolution, and access to the shared drive.
 
-Screenshots are from my original course lab recording. The [evidence map](docs/evidence-map.md) links them to the relevant timestamps.
+Screenshots are from my [original course lab walkthrough](https://youtu.be/TKzkftNywjQ). The [walkthrough index](docs/walkthrough-index.md) links them to the relevant timestamps.
 
 ## Environment at a glance
 
@@ -14,7 +14,7 @@ Screenshots are from my original course lab recording. The [evidence map](docs/e
 
 The internal domain was `fl2026corp.com`. Server A used `192.168.1.10` on the internal network; Server B used `192.168.1.11`. The client received `192.168.1.100/24` from Server B.
 
-![Verified lab architecture](diagrams/architecture.svg)
+![Lab architecture](diagrams/architecture.svg)
 
 ## What I configured
 
@@ -27,7 +27,7 @@ The internal domain was `fl2026corp.com`. Server A used `192.168.1.10` on the in
 - Shared a central folder and mapped it automatically at user logon through Group Policy.
 - Hosted a small HTML page with IIS and accessed it from another server.
 
-## Validation highlights
+## What I tested
 
 The walkthrough included these client checks and server-side results:
 
@@ -50,5 +50,5 @@ Representative evidence:
 
 - [Architecture](docs/architecture.md) — components, addressing, and network relationships
 - [Implementation](docs/implementation.md) — server roles and applied settings
-- [Validation](docs/validation.md) — what was tested, where, and what the evidence supports
-- [Evidence map](docs/evidence-map.md) — recording timestamps and linked screenshots
+- [Validation](docs/validation.md) — what was tested and what happened
+- [Walkthrough index](docs/walkthrough-index.md) — clickable video timestamps and linked screenshots

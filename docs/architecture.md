@@ -1,10 +1,10 @@
 # Architecture
 
-## Verified topology
+## Topology
 
 The original walkthrough demonstrated three Windows systems on an internal network:
 
-| Component | Verified services or behavior | Addressing shown |
+| Component | Services or behavior | Addressing shown |
 | --- | --- | --- |
 | Server A | AD DS, DNS, Group Policy management, RRAS/NAT, SMB share, IIS | Internal interface: `192.168.1.10`; a second adapter connected toward the external network |
 | Server B | Domain member and DHCP server | `192.168.1.11`; gateway and DNS pointed to Server A |

@@ -13,7 +13,7 @@ These checks were recorded in the original lab walkthrough.
 | File sharing | Opened the mapped drive on the domain client | Shared files were visible through the mapped location |
 | IIS | Opened the Server A site from Server B | The custom page loaded from another lab system |
 
-## Representative proof
+## Selected evidence
 
 ### Client addressing
 
@@ -29,6 +29,6 @@ The client received `192.168.1.100/24` from DHCP server `192.168.1.11`, with `19
 
 ![Registry Editor blocked by administrator policy](../evidence/registry-restriction.png)
 
-### Evidence limitation
+### Recording limitation
 
 The IIS site did not load reliably during one client attempt; the page later loaded from Server B. The recording did not establish why the client attempt failed.
