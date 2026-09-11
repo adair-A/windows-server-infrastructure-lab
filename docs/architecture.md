@@ -2,15 +2,15 @@
 
 ## Topology
 
-The original walkthrough demonstrated three Windows systems on an internal network:
+I built the lab with three Windows systems on an internal network:
 
-| Component | Services or behavior | Addressing shown |
+| Component | Services or behavior | Addressing |
 | --- | --- | --- |
 | Server A | AD DS, DNS, Group Policy management, RRAS/NAT, SMB share, IIS | Internal interface: `192.168.1.10`; a second adapter connected toward the external network |
 | Server B | Domain member and DHCP server | `192.168.1.11`; gateway and DNS pointed to Server A |
 | Domain client | Domain logon, GPO application, mapped drive, DHCP/DNS/routing validation | DHCP-assigned `192.168.1.100/24` |
 
-The forest/domain name shown in the walkthrough was `fl2026corp.com`.
+I used `fl2026corp.com` as the forest and domain name.
 
 ## Traffic and service relationships
 

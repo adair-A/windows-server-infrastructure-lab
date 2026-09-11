@@ -6,7 +6,7 @@ Screenshots are from my [original course lab walkthrough](https://youtu.be/TKzkf
 
 ## Environment at a glance
 
-| System | Demonstrated role |
+| System | Role |
 | --- | --- |
 | Server A | Active Directory Domain Services, DNS, Group Policy, RRAS/NAT, file share, IIS |
 | Server B | Domain member and DHCP server |
@@ -29,7 +29,7 @@ The internal domain was `fl2026corp.com`. Server A used `192.168.1.10` on the in
 
 ## What I tested
 
-The walkthrough included these client checks and server-side results:
+I performed these client checks and reviewed the related server-side results:
 
 - A restricted domain user received the configured wallpaper, mapped drive, and policy restrictions. Registry Editor displayed an administrator restriction message.
 - A second domain user could open tools that were restricted for the OU-scoped account, confirming the restrictions followed the user’s policy scope.
